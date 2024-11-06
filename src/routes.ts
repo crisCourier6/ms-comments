@@ -4,80 +4,80 @@ export const Routes = [
     // user rates expert
 {
     method: "get",
-    route: "/comments-expert",
+    route: "/api/v1/comments-expert",
     controller: MainController,
     action: "userRatesExpertAll"
 }, {
     method: "get",
-    route: "/comments-expert/:id",
+    route: "/api/v1/comments-expert/:id",
     controller: MainController,
     action: "userRatesExpertOne"
 }, {
     method: "post",
-    route: "/comments-expert",
+    route: "/api/v1/comments-expert",
     controller: MainController,
     action: "userRatesExpertSave"
 }, {
     method: "patch",
-    route: "/comments-expert/:id",
+    route: "/api/v1/comments-expert/:id",
     controller: MainController,
     action: "userRatesExpertUpdate"
 }, {
     method: "delete",
-    route: "/comments-expert/:id",
+    route: "/api/v1/comments-expert/:id",
     controller: MainController,
     action: "userRatesExpertRemove"
 }, 
     // user rates store
 {
     method: "get",
-    route: "/comments-store",
+    route: "/api/v1/comments-store",
     controller: MainController,
     action: "userRatesStoreAll"
 }, {
     method: "get",
-    route: "/comments-store/:id",
+    route: "/api/v1/comments-store/:id",
     controller: MainController,
     action: "userRatesStoreOne"
 }, {
     method: "post",
-    route: "/comments-store",
+    route: "/api/v1/comments-store",
     controller: MainController,
     action: "userRatesStoreSave"
 }, {
     method: "patch",
-    route: "/comments-store/:id",
+    route: "/api/v1/comments-store/:id",
     controller: MainController,
     action: "userRatesStoreUpdate"
 }, {
     method: "delete",
-    route: "/comments-store/:id",
+    route: "/api/v1/comments-store/:id",
     controller: MainController,
     action: "userRatesStoreRemove"
 // food comments
 }, {
     method: "get",
-    route: "/comments-food",
+    route: "/api/v1/comments-food",
     controller: MainController,
     action: "userCommentsFoodAll"
 }, {
     method: "get",
-    route: "/comments-food/:id",
+    route: "/api/v1/comments-food/:id",
     controller: MainController,
     action: "userCommentsFoodOne"
 }, {
     method: "post",
-    route: "/comments-food",
+    route: "/api/v1/comments-food",
     controller: MainController,
     action: "userCommentsFoodSave"
 }, {
     method: "patch",
-    route: "/comments-food/:id",
+    route: "/api/v1/comments-food/:id",
     controller: MainController,
     action: "userCommentsFoodUpdate"
 }, {
     method: "delete",
-    route: "/comments-food/:id",
+    route: "/api/v1/comments-food/:id",
     controller: MainController,
     action: "userCommentsFoodRemove"
 }]
