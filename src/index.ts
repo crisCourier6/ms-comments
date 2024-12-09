@@ -9,7 +9,7 @@ import "dotenv/config"
 import { UserController } from "./controller/UserController"
 
 AppDataSource.initialize().then(async () => {
-    amqp.connect('amqps://zqjaujdb:XeTIDvKuWz8bHL5DHdJ9iq6e4CqkfqTh@gull.rmq.cloudamqp.com/zqjaujdb', (error0, connection) => {
+    amqp.connect(process.env.RABBITMQ_URL, (error0, connection) => {
         if(error0){
             throw error0
         }
