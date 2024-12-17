@@ -13,7 +13,7 @@ export class UserController {
         return this.userRepository.save(req)
     }
     async update(req: any) {
-        const {id, storeProfile, expertProfile, userHasRole, ...user } = req
+        const {id, storeProfile, expertProfile, userHasRole, lostPass, ...user } = req
         if (!id) {
             return "id inválida"
         }
