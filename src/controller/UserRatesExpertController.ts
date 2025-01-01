@@ -5,8 +5,8 @@ import { User } from "../entity/User"
 
 export class UserRatesExpertController {
 
-    private userRatesExpertRepository = AppDataSource.getRepository(UserRatesExpert)
-    private userRepository = AppDataSource.getRepository(User)
+    private readonly userRatesExpertRepository = AppDataSource.getRepository(UserRatesExpert)
+    private readonly userRepository = AppDataSource.getRepository(User)
 
     async all(req: Request, res: Response, next: NextFunction) {
         const { u, e } = req.query

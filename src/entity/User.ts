@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, OneToOne, OneToMany } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, OneToMany } from "typeorm"
 import { UserRatesExpert } from "./UserRatesExpert"
 import { UserRatesStore } from "./UserRatesStore"
 import { UserCommentsFood } from "./UserCommentsFood"

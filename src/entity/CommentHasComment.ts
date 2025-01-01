@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne, JoinColumn, PrimaryColumn, UpdateDateColumn } from "typeorm"
+import { Entity, ManyToOne, JoinColumn, PrimaryColumn } from "typeorm"
 import { UserCommentsFood } from "./UserCommentsFood"
 
 @Entity()

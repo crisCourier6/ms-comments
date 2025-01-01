@@ -3,13 +3,12 @@ import { NextFunction, Request, Response } from "express"
 import { User } from "../entity/User"
 import { UserCommentsFood } from "../entity/UserCommentsFood"
 import { CommentHasComment } from "../entity/CommentHasComment"
-import { IsNull, Not } from "typeorm"
 
 export class UserCommentsFoodController {
 
-    private userCommentsFoodRepository= AppDataSource.getRepository(UserCommentsFood)
-    private userRepository = AppDataSource.getRepository(User)
-    private commentHasCommentRepository = AppDataSource.getRepository(CommentHasComment)
+    private readonly userCommentsFoodRepository= AppDataSource.getRepository(UserCommentsFood)
+    private readonly userRepository = AppDataSource.getRepository(User)
+    private readonly commentHasCommentRepository = AppDataSource.getRepository(CommentHasComment)
 
     async all(req: Request, res: Response, next: NextFunction) {
         const { c, u, f } = req.query;
